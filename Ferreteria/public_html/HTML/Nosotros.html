@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Nosotros.css" type="text/css"/>
+    <link rel="stylesheet" href="../CSS/Estilo index.css" type="text/css"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+     <script src="../JS/Funciones.js"></script>
+
+     <title>Nosotros</title>
+</head>
+<body>
+    <header>
+    <div class="header-container">
+         <button id="admin-btn" onclick="location.href='../HTML/admin.html'">Admin</button>
+        <img src="../Imagenes/logo.png" alt="logo" id="logo">
+        <nav class="nav-buttons">
+            <button onclick="location.href='../index.html'">Inicio</button>
+            <button onclick="location.href='../HTML/nosotros.html'">Nosotros</button>
+            <button onclick="location.href='../HTML/Servicios.html'">Servicios</button>
+            <button onclick="location.href='../HTML/Productos.html'">Productos</button>
+        </nav>
+        <button id="carro-btn" onclick="location.href='../HTML/carro.html'">Carro</button>
+    </div>
+</header>
+
+<img src="../Imagenes/Ferreteria.jpg" alt="Imagen completa" class="nosotros-image"> <br> <br> <br>
+    <div class="container">
+        <h1 style="color: red; text-align: center;">Nosotros</h1>
+        <br>
+        <p style="color: black;">En Ferreteria M.A, nos dedicamos a proporcionar a nuestros clientes todo lo que necesitan para sus proyectos de construcción, reparación y mejoras del hogar. Nuestro extenso inventario incluye herramientas manuales y eléctricas, materiales de construcción, productos de plomería y electricidad, pinturas, cerraduras, accesorios de jardín y mucho más.
+
+Nuestro equipo de expertos está siempre dispuesto a brindar asesoramiento técnico y recomendaciones personalizadas. Valoramos la satisfacción del cliente y nos esforzamos por superar las expectativas en cada interacción. Ya sea que esté buscando una solución específica para un proyecto o simplemente necesite consejos y sugerencias, estamos aquí para ayudarlo.
+
+En Ferreteria M.A, creemos en la importancia de la calidad, la confiabilidad y la excelencia en el servicio al cliente. Nos esforzamos por crear relaciones a largo plazo con nuestros clientes, convirtiéndonos en su socio de confianza para todas sus necesidades de ferretería. ¡Visítenos hoy mismo y descubra cómo podemos ayudarlo a hacer realidad sus proyectos!</p>
+        <br> <br> 
+        <table style="width: 100%; text-align: center;">
+            <tr>
+                <th>Misión</th>
+                <th>Visión</th>
+                <th>Compromiso</th>
+            </tr>
+            <tr>
+                <td>Ser la tienda de ferretería líder en nuestra área, reconocida por nuestra amplia variedad de productos de alta calidad, excelente servicio al cliente y asesoramiento experto. Nos esforzamos por ser un referente en el sector, proporcionando soluciones integrales y satisfaciendo las necesidades de nuestros clientes.</td>
+                <td>Nuestra misión es ofrecer a nuestros clientes una experiencia de compra excepcional al proporcionar productos de ferretería de primera calidad, brindando un servicio personalizado y conocimientos técnicos superiores. Buscamos ser un socio confiable para nuestros clientes, ayudándoles a encontrar las soluciones adecuadas para sus proyectos de construcción, mantenimiento y mejoras del hogar.</td>
+                <td>En Ferreteias M.A, nos enorgullece ser una tienda de ferretería de confianza y de referencia en nuestra comunidad. Con años de experiencia en el sector, hemos establecido relaciones sólidas con proveedores de renombre para garantizar la calidad y variedad de nuestros productos.</td>
+            </tr>
+        </table>
+        <br><br><br>
+        <h2 class="subtitulo">Nuestros Valores</h2>
+        <br><br><br>
+        <table style="width: 100%; text-align: center;">
+            <tr>
+                <th>Humildad</th>
+                <th>Respeto</th>
+                <th>Servicio</th>
+            </tr>
+            <tr>
+                <td>Reconocemos la necesidad de escuchar a los demás y mejorar día a día.</td>
+                <td>Valoramos el trato respetuoso entre nuestros colaboradores y la comunicación clara y abierta.</td>
+                <td>Brindar ayuda de manera espontánea aún en los detalles más pequeños.</td>
+            </tr>
+        </table>
+        <br><br>
+        <table style="width: 100%; text-align: center;">
+            <tr>
+                <th>Responsabilidad</th>
+                <th>Dedicación</th>
+                <th>Disciplina</th>
+            </tr>
+            <tr>
+                <td>Reconocemos la capacidad de nuestros colaboradores para realizar las labores encomendadas de manera responsable y oportuna.</td>
+                <td>Trabajar es el primer paso, procuramos llevar a cabo nuestras actividades de la manera correcta y con responsabilidad.</td>
+                <td>Valoramos a las personas comprometidas con su trabajo y consigo mismas para lograr a través de la perseverancia las metas propuestas.</td>
+            </tr>
+        </table>
+    </div>
+<div id="chatbot">
+    <button id="chatbotButton" onclick="openForm()">Chat</button>
+    <div id="chatbotForm" class="chatbot-container">
+        <form action="/submit_chatbot_form" method="post">
+            <h1>Chat</h1>
+
+            <label for="name"><b>Nombre</b></label>
+            <input type="text" placeholder="Ingresa tu nombre" name="name" required>
+
+            <label for="email"><b>Correo electrónico</b></label>
+            <input type="text" placeholder="Ingresa tu correo electrónico" name="email" required>
+
+            <label for="number"><b>Número</b></label>
+            <input type="text" placeholder="Ingresa tu número" name="number" required>
+
+            <label for="msg"><b>Mensaje</b></label>
+            <textarea placeholder="Ingresa tu mensaje" name="msg" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+        </form>
+    </div>
+</div>
+<br><br><br>
+    <footer>
+    <div class="footer-img-container">
+        <img src="../Imagenes/pie pagina.webp" alt="Imagen del pie de página">
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+#carrito {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative
+}
+
+.producto {
+    width: calc(33.333% - 10px);
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+.total {
+    font-size: 200%; /* Hace que el texto sea 200% más grande */
+    text-align: center; /* Centra el texto */
+    width: 100%; /* Asegura que el bloque de texto ocupe todo el ancho posible */
+    position: absolute; /* Posiciona el bloque de texto de manera absoluta */
+    bottom: 0; /* Coloca el bloque de texto en la parte inferior del contenedor */
+}

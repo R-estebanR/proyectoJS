@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Nosotros.css" type="text/css"/>
+    <link rel="stylesheet" href="../CSS/Estilo index.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/Productos.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+   
+
+     <title>Nosotros</title>
+</head>
+<body>
+    <header>
+    <div class="header-container">
+         <button id="admin-btn" onclick="location.href='../HTML/admin.html'">Admin</button>
+        <img src="../Imagenes/logo.png" alt="logo" id="logo">
+        <nav class="nav-buttons">
+            <button onclick="location.href='../index.html'">Inicio</button>
+            <button onclick="location.href='../HTML/nosotros.html'">Nosotros</button>
+            <button onclick="location.href='../HTML/Servicios.html'">Servicios</button>
+            <button onclick="location.href='../HTML/Productos.html'">Productos</button>
+        </nav>
+        <button id="carro-btn" onclick="location.href='../HTML/carro.html'">Carro</button>
+    </div>
+</header>
+
+<img src="../Imagenes/Ferreteria.jpg" alt="Imagen completa" class="nosotros-image"> <br> <br> <br>
+    <div class="container">
+        <h1 style="color: red; text-align: center;">Productos</h1>
+        <br>
+        <p style="color: black;">Somos distribuidores y comercializamos productos de primera calidad para la construcción y de ferretería.</p>
+     
+        <h2 class="subtitulo">Marcas</h2>
+         <p style="color: black;">Algunas marcas distribuidas por nosotros:Stanley,Bosch,3M,Black & Decker,Makita,Hilti,Cisa</p>
+        <br><br><br>
+        
+        <br><br>
+  
+    </div>
+
+<div id="productos">
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+  <!-- Modal Content (The Image) -->
+  <div id="imgContainer">
+    <img class="modal-content" id="img01">
+  </div>
+  <!-- The Caption of The Image -->
+  <div id="caption"></div>
+</div>
+
+    
+</div>
+
+<button id="carritoButton" onclick="verCarrito()">Ver carrito</button>
+
+<div id="carrito"></div>
+
+
+
+
+
+<div id="chatbot">
+    <button id="chatbotButton" onclick="openForm()">Chat</button>
+    <div id="chatbotForm" class="chatbot-container">
+        <form action="/submit_chatbot_form" method="post">
+            <h1>Chat</h1>
+
+            <label for="name"><b>Nombre</b></label>
+            <input type="text" placeholder="Ingresa tu nombre" name="name" required>
+
+            <label for="email"><b>Correo electrónico</b></label>
+            <input type="text" placeholder="Ingresa tu correo electrónico" name="email" required>
+
+            <label for="number"><b>Número</b></label>
+            <input type="text" placeholder="Ingresa tu número" name="number" required>
+
+            <label for="msg"><b>Mensaje</b></label>
+            <textarea placeholder="Ingresa tu mensaje" name="msg" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+        </form>
+    </div>
+</div>
+    <footer>
+        <img src="imagen-pie.jpg" alt="Imagen del pie de página">
+    </footer>
+  <script src="../JS/Funciones.js"></script>
+</body>
+</html>

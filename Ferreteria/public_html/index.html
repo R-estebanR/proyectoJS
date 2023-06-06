@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/Estilo index.css" type="text/css"/>
+   <script src="JS/Funciones.js"></script>
+
+
+  <title>Ferretaria</title>
+</head>
+
+<body>
+
+ <header>
+    <div class="header-container">
+         <button id="admin-btn" onclick="location.href='HTML/admin.html'">Admin</button>
+        <img src="Imagenes/logo.png" alt="logo" id="logo">
+        <nav class="nav-buttons">
+            <button onclick="location.href='index.html'">Inicio</button>
+            <button onclick="location.href='HTML/nosotros.html'">Nosotros</button>
+            <button onclick="location.href='HTML/Servicios.html'">Servicios</button>
+            <button onclick="location.href='HTML/Productos.html'">Productos</button>
+        </nav>
+        <button id="carro-btn" onclick="location.href='HTML/carro.html'">Carro</button>
+    </div>
+</header>
+
+
+
+  <!-- Sección con slider de imágenes -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Imagenes/Cosas.jpg" class="d-block w-100" alt="Imagen 1">
+    </div>
+    <div class="carousel-item">
+      <img src="Imagenes/Herramientas.jpg" class="d-block w-100" alt="Imagen 2">
+    </div>
+    <div class="carousel-item">
+      <img src="Imagenes/tuberias.jpg" class="d-block w-100" alt="Imagen 3">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+  <br><br><br><br><br><br><br><br><br><br><br>
+  
+  
+<div class="contact-wrapper">
+  <div class="contact-info">
+      <p>7:00 am - 5:00 pm Domicilios</p>
+      <div class="whatsapp-info">
+    <img src="Imagenes/whatsapp.jpg" alt="logo whatsapp" class="whatsapp-logo">
+    <p class="whatsapp-number">3132860204</p>
+</div>
+
+
+      <p>Venta y entrega de material de construcción: Construcción, ferretería.</p>
+      <p>Servicios de: Cerrajería Plomería Electricidad Pintura Mantenimiento.</p>
+  </div>
+</div>
+  
+  <div id="chatbot">
+    <button id="chatbotButton" onclick="openForm()">Chat</button>
+    <div id="chatbotForm" class="chatbot-container">
+        <form action="/submit_chatbot_form" method="post">
+            <h1>Chat</h1>
+
+            <label for="name"><b>Nombre</b></label>
+            <input type="text" placeholder="Ingresa tu nombre" name="name" required>
+
+            <label for="email"><b>Correo electrónico</b></label>
+            <input type="text" placeholder="Ingresa tu correo electrónico" name="email" required>
+
+            <label for="number"><b>Número</b></label>
+            <input type="text" placeholder="Ingresa tu número" name="number" required>
+
+            <label for="msg"><b>Mensaje</b></label>
+            <textarea placeholder="Ingresa tu mensaje" name="msg" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+        </form>
+    </div>
+</div>
+
+
+
+ 
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

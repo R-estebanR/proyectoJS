@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="../CSS/Admin.css">
+          <link rel="stylesheet" href="../CSS/Estilo index.css" type="text/css"/>
+         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+     <body>
+     <header>
+    <div class="header-container">
+         <button id="admin-btn" onclick="location.href='../HTML/admin.html'">Admin</button>
+        <img src="../Imagenes/logo.png" alt="logo" id="logo">
+        <nav class="nav-buttons">
+            <button onclick="location.href='../index.html'">Inicio</button>
+            <button onclick="location.href='../HTML/nosotros.html'">Nosotros</button>
+            <button onclick="location.href='../HTML/Servicios.html'">Servicios</button>
+            <button onclick="location.href='../HTML/Productos.html'">Productos</button>
+        </nav>
+        <button id="carro-btn" onclick="location.href='../HTML/carro.html'">Carro</button>
+    </div>
+</header>
+
+         <br> <br> <br> <br> <br>
+          <h1>Agregar Producto</h1> w
+   
+           <form id="form-producto">
+        <table>
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" id="nombre" placeholder="Ingresa nombre del producto" required></td>
+            </tr>
+            <tr>
+                <td><label for="descripcion">Descripción:</label></td>
+                <td><input type="text" id="descripcion" placeholder="Ingresa descripción del producto" required></td>
+            </tr>
+            <tr>
+                <td><label for="precio">Precio:</label></td>
+                <td><input type="number" id="precio" placeholder="Ingresa precio del producto" required></td>
+            </tr>
+            <tr>
+                <td><label for="cantidad">Cantidad:</label></td>
+                <td><input type="number" id="cantidad" placeholder="Ingresa cantidad del producto" required></td>
+            </tr>
+            <tr>
+                <td><label for="imagen">Imagen:</label></td>
+                <td><input type="file" id="imagen" multiple required></td>
+            </tr>
+            <tr>
+                <td> <br><br><br></td>
+            
+                <td><input type="submit" value="Agregar producto"></td>
+            </tr>
+        </table>
+    </form>
+          <div id="productos">
+        <!-- Aquí se mostrarán los productos -->
+    </div>
+          <script src="../JS/Funciones.js"></script>
+    </body>
+</html>

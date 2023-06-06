@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Nosotros.css" type="text/css"/>
+    <link rel="stylesheet" href="../CSS/Estilo index.css" type="text/css"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+     <script src="../JS/Funciones.js"></script>
+
+     <title>Nosotros</title>
+</head>
+<body>
+   <header>
+    <div class="header-container">
+         <button id="admin-btn" onclick="location.href='../HTML/admin.html'">Admin</button>
+        <img src="../Imagenes/logo.png" alt="logo" id="logo">
+        <nav class="nav-buttons">
+            <button onclick="location.href='../index.html'">Inicio</button>
+            <button onclick="location.href='../HTML/nosotros.html'">Nosotros</button>
+            <button onclick="location.href='../HTML/Servicios.html'">Servicios</button>
+            <button onclick="location.href='../HTML/Productos.html'">Productos</button>
+        </nav>
+        <button id="carro-btn" onclick="location.href='../HTML/carro.html'">Carro</button>
+    </div>
+</header>
+
+<img src="../Imagenes/Ferreteria.jpg" alt="Imagen completa" class="nosotros-image"> <br> <br> <br>
+    <div class="container">
+        <h1 style="color: red; text-align: center;">Servicios</h1>
+        <br>
+        <p style="color: black;">Asesoramiento técnico: Nuestro equipo de expertos está capacitado para brindar asesoramiento técnico sobre el uso adecuado de herramientas, materiales de construcción y productos específicos. Estamos aquí para responder preguntas, ofrecer recomendaciones y ayudar a nuestros clientes a encontrar las soluciones más adecuadas para sus proyectos.</p>
+        <p style="color: black;">Corte y personalización: Ofrecemos servicios de corte y personalización para diversos productos, como tuberías, maderas y vidrios. Si necesita un tamaño o forma específica, nuestro personal estará encantado de ayudarlo a obtener el producto a medida que necesita.</p>
+        <p style="color: black;">Entrega a domicilio: Reconocemos que algunos de nuestros clientes pueden necesitar una entrega conveniente de los productos adquiridos. Por eso, ofrecemos un servicio de entrega a domicilio para asegurarnos de que sus productos lleguen de manera segura y puntual a su ubicación.</p>
+        <p style="color: black;">Alquiler de herramientas: Entendemos que algunas herramientas pueden ser costosas y que es posible que solo las necesite para un proyecto específico. Por eso, ofrecemos un servicio de alquiler de herramientas que le permite acceder a las herramientas necesarias por el tiempo que las requiera, ahorrándole el costo de comprarlas.</p>
+        <p style="color: black;">Instalación y montaje: Si necesita ayuda para instalar o montar productos específicos, como cerraduras, estanterías o griferías, nuestro equipo puede brindarle servicios de instalación profesional. Nos aseguraremos de que los productos se instalen correctamente y funcionen según sus necesidades.</p>
+        <p style="color: black;">Servicio de pedidos especiales: Si no encuentra un producto específico en nuestro inventario, podemos ayudarlo a realizar un pedido especial. Trabajaremos con nuestros proveedores para encontrar y obtener el producto deseado, brindándole opciones adicionales para satisfacer sus necesidades.</p>
+        <h2 class="subtitulo">Ventas</h2>
+        <br><br><br>
+        <table style="width: 100%; text-align: center;">
+            <tr>
+                <th>Mostrador</th>
+                <th>Escritorio</th>
+                <th>Visitas</th>
+            </tr>
+            <tr>
+                <td>El cliente visita nuestras instalaciones y es atendido por personal idóneo, el cuál le orienta, atiende y suministra los productos requeridos.</td>
+                <td>El cliente nos hace una solicitud telefónica, por correo electrónico o fax, sus requerimientos son atendidos brindando información de la mercancía disponible y sus precios. Además, cuando sea necesaria orientación técnica.</td>
+                <td>Visitamos al cliente potencial o establecido, brindando información técnica y comercial de nuestros productos con el fin de atender sus necesidades y requerimientos.</td>
+            </tr>
+        </table>
+        <br><br>
+  
+    </div>
+<div id="chatbot">
+    <button id="chatbotButton" onclick="openForm()">Chat</button>
+    <div id="chatbotForm" class="chatbot-container">
+        <form action="/submit_chatbot_form" method="post">
+            <h1>Chat</h1>
+
+            <label for="name"><b>Nombre</b></label>
+            <input type="text" placeholder="Ingresa tu nombre" name="name" required>
+
+            <label for="email"><b>Correo electrónico</b></label>
+            <input type="text" placeholder="Ingresa tu correo electrónico" name="email" required>
+
+            <label for="number"><b>Número</b></label>
+            <input type="text" placeholder="Ingresa tu número" name="number" required>
+
+            <label for="msg"><b>Mensaje</b></label>
+            <textarea placeholder="Ingresa tu mensaje" name="msg" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+        </form>
+    </div>
+</div>
+    <footer>
+        <img src="imagen-pie.jpg" alt="Imagen del pie de página">
+    </footer>
+</body>
+</html>

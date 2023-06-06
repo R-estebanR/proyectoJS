@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/Estilo index.css" type="text/css"/>
+         <link rel="stylesheet" href="../CSS/Carro.css" type="text/css"/>
+    </head>
+    <body>
+            <header>
+    <div class="header-container">
+         <button id="admin-btn" onclick="location.href='../HTML/admin.html'">Admin</button>
+        <img src="../Imagenes/logo.png" alt="logo" id="logo">
+        <nav class="nav-buttons">
+            <button onclick="location.href='../index.html'">Inicio</button>
+            <button onclick="location.href='../HTML/nosotros.html'">Nosotros</button>
+            <button onclick="location.href='../HTML/Servicios.html'">Servicios</button>
+            <button onclick="location.href='../HTML/Productos.html'">Productos</button>
+        </nav>
+        <button id="carro-btn" onclick="location.href='../HTML/carro.html'">Carro</button>
+    </div>
+</header>
+
+         <h1>Mi carrito</h1>
+    <button id="carritoButton" onclick="verCarrito()">Ver carrito</button>
+
+<div id="carrito"></div>
+    <script src="carrito.js"></script>
+    <script src="../JS/Carrito.js"></script>
+    </body>
+</html>

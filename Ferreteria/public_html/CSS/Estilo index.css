@@ -1,0 +1,319 @@
+/* CSS Document */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    padding: 15px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    color: white;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-section, .right-section {
+    display: flex;
+    align-items: center;
+}
+
+#admin-btn, #carro-btn {
+    margin: 0 20px;
+}
+
+#admin-left-btn {
+    position: absolute;
+    left: 10px; /* Agrega un margen a la izquierda */
+    top: 0;
+}
+button {
+    background-color: #006699; /* Cambia esto al color que prefieras */
+    border: none; /* Esto quita el borde por completo */
+    color: white; /* Esto cambia el color del texto a blanco */
+    padding: 15px 32px; /* Esto ajusta el espacio alrededor del texto en el botón */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.3s; /* Esto hace que el cambio de color sea más suave cuando se pasa el ratón por encima del botón */
+}
+
+button:hover {
+    background-color: #004466; /* Cambia esto al color que prefieras para cuando se pasa el ratón por encima del botón */
+    color: white;
+}
+
+.nav-buttons button:not(:last-child) {
+    border-right: 1px solid #004466; /* Esto pone un borde en el lado derecho de todos los botones, excepto el último */
+}
+
+.carousel {
+    width: 90%; /* El carrusel ocupará el 90% del ancho de la pantalla */
+    margin: 0 auto; /* Esto centrará el carrusel */
+    display: block; /* Esto hará que la imagen sea un bloque, necesario para centrarla */
+}
+
+.carousel-item img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del carrusel */
+    height: 300px; /* La altura se mantiene constante */
+    object-fit: contain; /* Esto asegurará que la imagen se ajuste dentro del espacio disponible sin distorsionarse */
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    filter: invert(1);
+}
+
+
+
+.navbar-light .navbar-brand {
+    color: black;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: gray;
+}
+
+.navbar .form-inline {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.carousel {
+    margin-top: 20px;
+}
+
+.container.mt-4 {
+    margin-top: 30px !important;
+}
+
+.container .row .col {
+    padding: 10px;
+}
+
+.container .row .col .btn {
+    width: 100%;
+}
+
+.container .row .col.border-right {
+    border-right: 1px solid black;
+}
+
+.container .row .col:not(.border-right) {
+    border-right: none;
+}
+
+.container .row .col:last-child {
+    border-right: none;
+}
+#logo {
+    margin-right: 20px;
+}
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Puedes ajustar este valor según tus necesidades */
+}
+
+#logo {
+
+    width: 100px;
+    height: 80px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px; /* Ajusta este valor según cuán separados deseas que estén los botones */
+}
+.header-container {
+    display: flex;
+    justify-content: center;
+    background-color: #006699;
+    padding: 20px 0;
+    width: 100%;
+}
+.contact-wrapper {
+  display: flex;
+  justify-content: center; /* Esto centrará el contenedor hijo .contact-info */
+}
+
+.contact-info {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.contact-info p {
+    margin: 0px 0; /* Ajusta el espaciado vertical entre los párrafos */
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.contact-info img {
+    max-width: 100%;
+}
+
+.whatsapp-info {
+    display: flex;
+    align-items: center; /* Esto alinea verticalmente los elementos dentro del contenedor */
+    gap: 10px;
+}
+
+.whatsapp-logo {
+    height: 1.2em; /* Esto permite que la imagen mantenga sus proporciones */
+}
+
+.whatsapp-number {
+    margin: 0;
+    line-height: 1.2; /* Este valor puede ajustarse para alinear perfectamente la imagen con el texto */
+}
+
+
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Puedes ajustar este valor según tus necesidades */
+}
+
+#logo {
+    margin-right: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px; /* Ajusta este valor según cuán separados deseas que estén los botones */
+}
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Puedes ajustar este valor según tus necesidades */
+}
+
+#logo {
+    margin-right: 20px;
+}
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px; /* Ajusta este valor según cuán separados deseas que estén los botones */
+}
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+}
+#chatbot {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+}
+
+#chatbotButton {
+    background-color: #006699;
+    color: white;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 15px;
+    z-index: 1;
+}
+
+#chatbotForm {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 3px solid #f1f1f1;
+    z-index: 1;
+    background-color: white;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.chatbot-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.chatbot-container input[type=text], .chatbot-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.chatbot-container input[type=text]:focus, .chatbot-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.chatbot-container .btn {
+    background-color: #006699;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+.chatbot-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
